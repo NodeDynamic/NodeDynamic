@@ -1,0 +1,25 @@
+@import "bootstrap.css";
+
+.btn-success.active.focus, .btn-success.active:focus, .btn-success.active:hover, .btn-success:active.focus, .btn-success:active:focus, .btn-success:active:hover, .open>.dropdown-toggle.btn-success.focus, .open>.dropdown-toggle.btn-success:focus, .open>.dropdown-toggle.btn-success:hover {
+	color: #fff;
+	background-color: #9d4c47;
+	border-color: #9d4c47;
+}
+
+.navbar-brand {
+	float: left;
+	height: 50px;
+	padding: 0px 0px;
+	font-size: 18px;
+	line-height: 46px;
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #cd635d;
+	border-color: #cd635d;
+}
+.btn-primary:hover{
+	background-color: #9d4c47;
+	border-color: #9d4c47;
+}

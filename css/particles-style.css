@@ -1,0 +1,9 @@
+
+#particles-js{
+	height: 250px;
+	background-color: #b61924;
+	background-image: url(../images/fractalbg.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
