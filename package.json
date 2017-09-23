@@ -1,0 +1,24 @@
+{
+  "name": "nodedynamic",
+  "version": "1.0.1",
+  "description": "personal site NodeDynamic",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prezlyata/NodeDynamic.git"
+  },
+  "author": "Prezlyata",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Prezlyata/NodeDynamic/issues"
+  },
+  "homepage": "https://github.com/Prezlyata/NodeDynamic#readme"
+}
