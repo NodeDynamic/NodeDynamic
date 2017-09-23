@@ -1,8 +1,6 @@
-@import "style.css";
-@import "bootstrap.css";
-
+@import url(style.css);
+@import url(bootstrap.css);
 img {
-	vertical-align: middle;
-	margin: 0 auto;
+  vertical-align: middle;
+  margin: 0 auto;
 }
-

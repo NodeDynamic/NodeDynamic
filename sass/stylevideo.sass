@@ -1,0 +1,37 @@
+.video-bar
+	color: #333
+	padding: 150px 0 150px
+	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../images/01.jpg)
+	background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../images/01.jpg)
+	background-size: cover
+	background-attachment: fixed
+	background-position: center center
+	text-align: center
+
+#about .about-video img
+	border: 8px solid #ffffff
+	position: absolute
+	left: -120px
+	bottom: -320px
+	padding: 12px
+
+.vid
+	margin: 0 auto
+
+.iframevideo
+	width: 100%
+	height: 500px
+
+@media screen and (max-width: 992px)
+	.iframevideo
+		height: 400px
+	#about .container .row .textcent
+		text-align: center
+
+@media screen and (max-width: 767px)
+	.iframevideo
+		height: 300px
+
+@media screen and (max-width: 320px)
+	.iframevideo
+		height: 150px
