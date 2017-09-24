@@ -830,8 +830,8 @@ footer {
 	margin: 0 auto;
 }
 .size{
-	width: 60px;
-	height: 60px;
+	width: 100px;
+	height: 100px;
 }
 .lable{
 	width: 41px;
@@ -988,3 +988,141 @@ footer {
 	padding-top: 30px; height: 0; overflow: hidden;
 	overflow: visible
 }
+
+.hvr-float-shadow {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	position: relative;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+.hvr-float-shadow:before {
+	pointer-events: none;
+	position: absolute;
+	z-index: -1;
+	content: '';
+	top: 90%;
+	left: 5%;
+	height: 10px;
+	width: 90%;
+	opacity: 0;
+	background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+	background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+	/* W3C */
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform, opacity;
+	transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+	-webkit-transform: translateY(-5px);
+	transform: translateY(-5px);
+	/* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+	opacity: 1;
+	-webkit-transform: translateY(5px);
+	transform: translateY(5px);
+	/* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+
+/*Build Section */
+
+.build_contant{
+	text-align: center;
+}
+/* .build_img img{	
+	max-width: 100%;
+} */
+
+#build{
+	background-color: #ffffff;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+/*marker*/
+
+/*Designate how the animation will take place*/
+@keyframes pulsate {
+	0% {
+		transform: scale(0.1);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1.2);
+		opacity: 0;
+	}
+}
+
+/* .wrap is our container div and will vary in name on your site */
+.wrap {
+	width: 90%;
+	max-width: 672px;
+	margin: 0 auto;
+}
+
+.map-bg {
+	background: url(../images/build.png) no-repeat;
+	background-position: 0px 0px;
+	background-size: auto;
+	width: 100%;
+	height: 330px;
+	position: relative;
+}
+
+/* Alter the top and left positions to sit on top of your map location */
+.marker {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 27px; /*positions our marker*/
+	left: 365px; /*positions our marker*/
+	display: block;
+}
+
+.pin {
+	width: 20px;
+	height: 20px;
+	position: relative;
+	top: 39px;
+	left: 40px;
+	background: rgba(5, 124, 255, 1);
+	border: 2px solid #FFF;
+	border-radius: 50%;
+	z-index: 1000;
+}
+
+.pin-effect {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	display: block;
+	background: rgba(5, 124, 255, 0.6);
+	border-radius: 50%;
+	opacity: 0;
+	animation: pulsate 2400ms ease-out infinite;
+
+}
+
+/* Adjusts the background image and marker for smaller screens */
+ @media only screen and (max-width: 480px) {
+	.map-bg {
+		background-position: -200px 0px;
+	}
+
+	.marker {
+		left: 165px;
+	}
+} 
+/*marker end*/
