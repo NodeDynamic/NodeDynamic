@@ -1073,11 +1073,12 @@ footer {
 
 .map-bg {
 	background: url(../images/build.png) no-repeat;
-	background-position: 0px 0px;
+	background-position: 0px 30px;
 	background-size: auto;
 	width: 100%;
 	height: 330px;
 	position: relative;
+	
 }
 
 /* Alter the top and left positions to sit on top of your map location */
@@ -1085,7 +1086,7 @@ footer {
 	width: 100px;
 	height: 100px;
 	position: absolute;
-	top: 27px; /*positions our marker*/
+	top: 57px; /*positions our marker*/
 	left: 365px; /*positions our marker*/
 	display: block;
 }
@@ -1118,7 +1119,7 @@ footer {
 /* Adjusts the background image and marker for smaller screens */
  @media only screen and (max-width: 480px) {
 	.map-bg {
-		background-position: -200px 0px;
+		background-position: -200px 30px;
 	}
 
 	.marker {
